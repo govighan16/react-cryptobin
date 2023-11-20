@@ -1,0 +1,43 @@
+.coin-about-container {
+  background: hsl(228, 9%, 10%);
+  padding: 20px;
+  width: 1000px;
+  overflow: hidden;
+}
+
+.coin-about-text a {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+.coin-about-text {
+  margin-bottom: 15px;
+}
+
+.coin-about-text a:hover {
+  color: #ff00ff;
+}
+
+@media (max-width: 1153px) {
+  .coin-about-container {
+    width: 650px;
+  }
+}
+
+@media (max-width: 667px) {
+  .coin-about-container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 525px) {
+  .coin-about-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .coin-about-container {
+    width: 315px;
+  }
+}

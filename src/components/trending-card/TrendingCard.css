@@ -1,0 +1,75 @@
+.trending-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0;
+  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  background: hsl(228, 9%, 10%);
+  justify-content: space-around;
+  border: none;
+  border-radius: 25px;
+  margin: 0 10px;
+}
+
+.trending-card-container:hover {
+  background: hsla(230, 16%, 22%, 0.5);
+}
+
+.card-title-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-title {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.grey-pastel {
+  color: hsl(227, 13%, 73%);
+}
+
+.coin-logo {
+  height: 30%;
+}
+
+.card-valueR {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card-currency {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.rise {
+  background: #00ff00;
+}
+
+.fall {
+  background: rgb(211, 36, 36);
+}
+
+.orange {
+  background: rgb(248, 155, 5);
+}
+
+.price-change {
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}

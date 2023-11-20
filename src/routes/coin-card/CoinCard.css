@@ -1,0 +1,73 @@
+.coin-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(228, 9%, 10%);
+  height: 450px;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px 20px 0;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 0px 8px #00ff00;
+}
+
+.coin-card-container:hover {
+  background: hsla(230, 16%, 22%, 0.5);
+}
+
+.coin-card-title-container {
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+
+.coin-card-title {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 7%;
+  text-transform: capitalize;
+}
+
+.coin-card-symbol {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.coin-card-img-container {
+  height: 180px;
+  margin-bottom: 5%;
+}
+
+.coin-card-img {
+  height: 100%;
+}
+
+.coin-card-current-price-container {
+  margin-bottom: 5%;
+}
+
+.coin-card-current-price {
+  font-size: 2rem;
+}
+
+.coin-card-rank-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coin-card-rank-text {
+  font-size: 1.5rem;
+}
+
+.coin-card-rank {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 481px) {
+  .coin-card-container {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,143 @@
+footer ul {
+  list-style: none;
+}
+
+footer {
+  color: #fff;
+}
+
+footer p {
+  max-width: 25em;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.name {
+  display: block;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.socials-list li,
+.payment-list li {
+  display: inline-block;
+  margin: 8px 8px 8px 0;
+}
+
+.socials-list a {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.socials-list a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.payment-list a {
+  font-size: 30px;
+  height: 30px;
+  transition: color 0.3s;
+}
+
+.payment-list a:hover {
+  color: #e3dbdb;
+}
+
+.links-list {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-list a {
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.links-list a:hover {
+  color: #7a3af4;
+}
+
+.input-container {
+  margin: 16px 0;
+  display: flex;
+}
+
+.input-container input {
+  padding: 8px 24px 8px 8px;
+  border: none;
+  background: #20232a;
+  color: #fff;
+}
+
+.input-container button {
+  padding: 8px;
+  background: #7a3af4;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-logo {
+  font-size: 13px;
+}
+
+.input-container button:hover {
+  background: #fff;
+}
+
+.input-container button:hover .submit-logo {
+  color: #7a3af4;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .name {
+    text-align: center;
+  }
+  .socials-list {
+    display: flex;
+    justify-content: center;
+  }
+  .links-container p {
+    margin: 0 auto;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
