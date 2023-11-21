@@ -9,7 +9,14 @@ const Header = () => {
 
   return (
     <div className="header" id="header">
-      <video autoPlay loop muted id="vid">
+      <video
+        autoPlay
+        loop
+        muted
+        playsinline="true"
+        disablePictureInPicture="true"
+        id="vid"
+      >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
       <div className={`header ${isVisible ? "header-text-container" : "hide"}`}>
