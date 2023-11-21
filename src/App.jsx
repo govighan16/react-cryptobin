@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Home from "./components/home/Home";
@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -41,7 +41,7 @@ function App() {
           <Route path=":coinId" element={<CoinData />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
