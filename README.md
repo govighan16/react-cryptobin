@@ -34,7 +34,6 @@ https://govighan16.github.io/react-cryptobin/
 
 1. Clone the repository:
 
-```bash
 git clone https://github.com/govighan16/react-cryptobin.git
 
 2. Enter the directory:
