@@ -123,7 +123,7 @@ const CoinData = () => {
           <CoinAbout aboutData={coinData.description.en} />
         </>
       ) : (
-        <div>
+        <div className="loading-container">
           <h1>Loading Data from Api...</h1>
         </div>
       )}

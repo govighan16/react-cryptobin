@@ -7,7 +7,6 @@
 }
 
 .navbar .container {
-  /* max-width: 1140px; */
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -28,7 +27,6 @@
 
 .container h1 {
   margin-left: 1rem;
-  /* color: #be29ec; */
   color: #7a3af4;
   margin-top: 100px;
   cursor: pointer;
@@ -61,7 +59,6 @@
 
   .nav {
     position: absolute;
-    /* position: relative; */
     flex-direction: column;
     justify-content: flex-start !important;
     top: 30px;
@@ -76,13 +73,8 @@
     position: relative;
   }
 
-  .container h1 {
-    /* width: 350px; */
-  }
-
   .nav.active {
     left: 0;
-    /* top: -20px; */
   }
 
   .link a {

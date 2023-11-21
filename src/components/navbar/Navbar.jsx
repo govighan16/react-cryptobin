@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useVisibility } from "../../context/VisibilityContext";
 
 const Navbar = () => {
@@ -13,9 +13,31 @@ const Navbar = () => {
     toggleVisibility();
   };
 
+  const closeMenu = () => {
+    if (window.innerWidth <= 940) {
+      setClick(false);
+      toggleVisibility();
+    }
+  };
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (click && scrollY > 0) {
+        closeMenu();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [click]);
 
   return (
     <div className="navbar">
@@ -26,17 +48,32 @@ const Navbar = () => {
 
         <ul className={click ? "nav active" : "nav"}>
           <li className="link">
-            <ScrollLink to="trending" smooth={true} duration={500}>
+            <ScrollLink
+              to="trending"
+              smooth={true}
+              duration={500}
+              onClick={closeMenu}
+            >
               Trending
             </ScrollLink>
           </li>
           <li className="link">
-            <ScrollLink to="exchanges" smooth={true} duration={500}>
+            <ScrollLink
+              to="exchanges"
+              smooth={true}
+              duration={500}
+              onClick={closeMenu}
+            >
               Exchanges
             </ScrollLink>
           </li>
           <li className="link">
-            <ScrollLink to="pricing" smooth={true} duration={500}>
+            <ScrollLink
+              to="pricing"
+              smooth={true}
+              duration={500}
+              onClick={closeMenu}
+            >
               Pricing
             </ScrollLink>
           </li>

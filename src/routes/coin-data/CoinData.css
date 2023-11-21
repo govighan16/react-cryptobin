@@ -77,6 +77,11 @@ body {
   color: rgb(211, 36, 36);
 }
 
+.loading-container {
+  width: 90vw;
+  text-align: center;
+}
+
 @media (max-width: 945px) {
   .coin-stats-container {
     width: 650px;
@@ -98,6 +103,9 @@ body {
   .ath-date,
   .atl-date {
     font-size: 1rem;
+  }
+  .loading-container h1 {
+    font-size: 23px;
   }
 }
 

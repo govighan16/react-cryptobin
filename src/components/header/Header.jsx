@@ -2,6 +2,7 @@ import backgroundVideo from "../../assets/bitcoin.mp4";
 import "./Header.css";
 import { BiSolidChevronRightCircle } from "react-icons/bi";
 import { useVisibility } from "../../context/VisibilityContext";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const { isVisible } = useVisibility();
@@ -25,12 +26,18 @@ const Header = () => {
           </p>
           <p>Discover a wealth of information at your fingertips.</p>
         </div>
-        <a href="#exchanges" className="btn">
+        <ScrollLink
+          to="exchanges"
+          smooth={true}
+          duration={500}
+          className="btn"
+          offset={-70}
+        >
           Get Started
           <span>
             <BiSolidChevronRightCircle className="chevron-icon" />
           </span>
-        </a>
+        </ScrollLink>
       </div>
     </div>
   );
